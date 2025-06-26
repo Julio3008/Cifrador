@@ -50,8 +50,6 @@ La aplicación está diseñada para funcionar en dispositivos de diferentes tama
 2. Abre el archivo `index.html` en tu navegador
 3. ¡Comienza a cifrar mensajes!
 
-Alternativamente, puedes ver una demo en vivo [aquí](https://tu-url-de-demo.com).
-
 ## 📝 Licencia
 
 Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
