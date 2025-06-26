@@ -1,36 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cifrador Cesar</title>
-    <link href="style.css" rel="stylesheet " />
+    <title>Cifrador César</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="style.css" rel="stylesheet" />
     <script src="script.js" type="text/javascript" defer></script>
   </head>
   <body>
     <main>
-      <h1>Cifrador Cesar.</h1>
+      <h1><i class="fas fa-lock"></i> Cifrador César</h1>
+      <div class="description">
+        <p>
+          Escribe un texto y será cifrado usando el algoritmo César con el
+          desplazamiento seleccionado.
+        </p>
+      </div>
+
       <form id="cifrador" autocomplete="off">
-        <input
-          id="input-original"
-          spellcheck="false"
-          placeholder="Ingrese el texto"
-          type="text"
-          name="text"
-        />
+        <div class="input-container">
+          <input
+            id="input-original"
+            spellcheck="false"
+            placeholder="Ingrese el texto a cifrar..."
+            type="text"
+            name="text"
+            autofocus
+          />
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
       </form>
-      <div id="resultado"></div>
-      <div class="rango">
-        <input
-          id="rango"
-          type="range"
-          value="10"
-          min="1"
-          max="20"
-          oninput="this.nextElementSibling.value = this.value"
-        />
-        <output>10</output>
+
+      <div class="result-container">
+        <div class="result-label">Texto cifrado:</div>
+        <div id="resultado"></div>
+      </div>
+
+      <div class="control-panel">
+        <div class="control-label">Desplazamiento:</div>
+        <div class="rango">
+          <input
+            id="rango"
+            type="range"
+            value="10"
+            min="1"
+            max="27"
+            oninput="this.nextElementSibling.value = this.value"
+          />
+          <o>10</o>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>
+          El cifrado César es un tipo de cifrado por sustitución en el que una
+          letra en el texto original es reemplazada por otra letra que se
+          encuentra un número fijo de posiciones más adelante en el alfabeto.
+        </p>
       </div>
     </main>
   </body>
